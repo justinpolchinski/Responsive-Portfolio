@@ -1,0 +1,215 @@
+body{
+    background: #b9b8b8;
+}
+h1 { 
+    
+    background: #4aaaa5;
+    color: whitesmoke;
+    width: 25%;
+    text-align: center;
+    padding: 2%;
+    font-size: 18px;
+}
+
+#aboutHeading{
+    color:#4aaaa5;
+    border-bottom: #b9b8b8;
+    font-size:2em;
+    border-bottom: 2px solid #777777;
+
+}
+#socialHeading{
+    color:#4aaaa5;
+    border-bottom: #b9b8b8;
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 2px solid #777777;
+
+
+}
+
+
+.grid-container {
+    position: relative;
+    bottom: 0;
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: 70% 10% 10% 10%;
+    background: whitesmoke;
+    padding-top: 2%;    
+    margin: auto;
+    
+}
+#emptyRow{
+    margin: 1em;
+    padding: 1em;
+    
+}
+.mainLeft{grid-area: mainLeft;
+background: whitesmoke;}
+
+.rowGap{grid-area: rowGap;
+background: #b9b8b8;}
+
+.socialIcon{grid-area: socialIcon;
+    background: whitesmoke;
+    height: 65%;
+    padding: 5%;
+    padding-bottom: 12%;
+}
+.anchorContainer{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background: whitesmoke;
+    padding-top: 2%;    
+    margin: auto;
+    justify-content: center;
+}
+    
+#jpProfile{
+    width: 25%;
+    float: left;
+}
+#aboutPara{
+    margin-right: 1%;
+    float: left;
+}
+#formContact{
+    margin-left: 1%;
+}
+#nameEmail{
+    width: 75%;
+}
+#message{
+    width: 75%;
+    height: 200px;
+}
+.containerImage{
+    display:grid;
+    grid-template-columns: 40% 20% 40%;
+    margin: auto;
+}
+#nokia{
+    width: 50%;
+    margin-right: 5%;
+
+}
+#nokiaImage{
+    width: 15em;
+}
+
+#piImg{
+    float: left;
+}
+#RaspPiTitle{
+    width: 10em;
+    text-align:center;
+    background:#4aaaa5;
+    position: relative;
+    left: 0;   
+}
+#nokiaTitle{
+    position: relative;
+    left: 0;
+    bottom: 2em;
+    width: 15em;
+    text-align:center;
+    background: #4aaaa5; 
+}
+.main-grid{
+    
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: 60% 10% 30%;
+    grid-template-areas: 
+    'mainLeft rowGap socialIcon';
+    margin: auto;
+    
+}
+
+.icon{
+    width: 100%;
+}
+@media screen and (max-width: 640px){
+    h1{
+        width: auto;
+    }
+    .heading {grid-area: header;}
+    .about {grid-area: about;}
+    .portfolio {grid-area: portfolio;}
+    .contact {grid-area: contact;}
+    #nokia{grid-area: nokia;}
+    .imageRow{grid-area: imageRow;}
+    #RaspPi{grid-area: raspPi;}
+
+   
+
+    .grid-container640{
+       
+        display: grid;
+        grid-template-columns:  33% 33% 33%;
+        grid-template-areas: 
+        'header header header'
+        'about portfolio contact';
+        justify-content: center;
+        background: whitesmoke;
+        text-align: center;
+        
+       
+        padding: 2%;
+        padding-bottom: 3%;  
+    }
+    .socialIcon{
+        margin-top: 4%;
+        padding-bottom: 15%;
+        margin-bottom: 12%;
+
+    }
+    .icon{
+        width: 65%;
+    }
+    .mainLeft{grid-area: mainLeft;}
+    .socialIcon{grid-area: socialIcon;
+    
+    }
+    .main-grid640{
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-areas:
+        'mainLeft mainLeft mainLeft'
+        '.socialIcon.';
+        
+    }
+    .topA {
+        position: relative;
+        top: 45%;
+        
+    }
+    .containerImage{
+        display:grid;
+        grid-template-columns:100%;
+        grid-template-areas: 
+        'nokia'
+        'imageRow'
+        'raspPi';
+        
+    }
+    #nokia, #RaspPi{
+        margin: auto;
+    }
+}
+.footer1{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family:  'Arial',
+     'Helvetica Neue', 
+     Helvetica, 
+     sans-serif;
+     border-top: #4aaaa5 3px solid;
+     background: #505858;
+     padding: 2%;
+    
+}
