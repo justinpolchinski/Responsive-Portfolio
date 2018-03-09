@@ -20,17 +20,26 @@
         <div class="main-grid main-grid640">
                 <div class="mainLeft">
                         <h2 id="aboutHeading">Contact</h2>
-                        <form id="formContact">
+                        <form id="formContact" action="https://formspree.io/justinpolchinski@gmail.com"
+                        method="POST">
+                                        <!-- <form action="https://formspree.io/your@email.com"
+                                        method="POST">
+                                      <input type="text" name="name">
+                                      <input type="email" name="_replyto">
+                                      <input type="submit" value="Send">
+                                  </form> -->
+                                  
+                                  
                                 Name:<br>
                                 <input id="nameEmail"type="text" name="Name" value="">
                                 <br>
                                 Email:<br>
-                                <input id="nameEmail" type="text" name="Email" value="">
+                                <input id="nameEmail" type="email" name="_replyto" value="">
                                 <br><br>
                                 Message:<br>
                                 <input id="message"type="text" name="Message" value="">
                                 <br><br>
-                                <input type="submit" value="Submit">
+                                <input type="submit" value="Send">
                               </form>  
                                
                 </div>
