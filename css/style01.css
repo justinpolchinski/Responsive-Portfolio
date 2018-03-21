@@ -81,8 +81,10 @@ background: #b9b8b8;}
     width: 75%;
 }
 #message{
+     
     width: 75%;
-    height: 200px;
+    padding-bottom: 200px;
+    
 }
 .containerImage{
     display:grid;
@@ -124,6 +126,8 @@ background: #b9b8b8;}
     grid-template-areas: 
     'mainLeft rowGap socialIcon';
     margin: auto;
+    margin-bottom: 1%;
+    padding-bottom: 10%;
     
 }
 
@@ -168,7 +172,9 @@ background: #b9b8b8;}
     .icon{
         width: 65%;
     }
-    .mainLeft{grid-area: mainLeft;}
+    .mainLeft{
+        grid-area: mainLeft;
+    }
     .socialIcon{grid-area: socialIcon;
     
     }
@@ -178,6 +184,7 @@ background: #b9b8b8;}
         grid-template-areas:
         'mainLeft mainLeft mainLeft'
         '.socialIcon.';
+        margin-bottom: 1%;
         
     }
     .topA {
